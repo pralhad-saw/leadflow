@@ -1,4 +1,6 @@
-.counter {
+/* Vite's default styles removed -- everything lives in index.css for now. */
+
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +183,4 @@
     right: 0;
     border-right-color: var(--border);
   }
-}
+} */

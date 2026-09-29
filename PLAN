@@ -9,3 +9,28 @@
 
 
 GOAL Day 2 (auth + multi-tenancy middleware)
+Day 2 me kya complete hua
+Day 2 ka secure foundation complete hai:
+
+JWT login and session restore
+Four roles:
+platform_admin
+brokerage_admin
+advisor
+client
+Brokerage-based multi-tenancy
+bcrypt password hashing
+Account disable support
+tokenVersion se instant token revocation
+Protected routes and role guards
+Tenant-safe user queries
+Helmet security headers
+CORS allow-list
+Login and API rate limiting
+Centralized error handling
+Seed script with Berlin and Munich data
+Frontend login screen
+Quick login buttons
+Protected routes
+Axios JWT interceptor
+401 hone par automatic logout
