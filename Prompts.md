@@ -160,3 +160,18 @@ also for testing give:
 give in detail all we need to do upon this day 3 summary and what will be done and what we will not do intentionally to make it faster but mvp ready and which roles will be involved and for them what will be created,
 thrn categories according to fronend and backend and at last give workflow process of both and day 3 as a whole and at last what all we need to be checked
 
+
+28)
+to chatgpt------------> take this input and covert task in time partiton blocks (output of 27)
+
+
+29)to arena.ai this is our flow of work:
+output of 28 ---> 
+
+Hour 0 to 0:30: Existing code check Hour 0:30 to 2:00: Lead backend APIs Hour 2:00 to 3:00: Webhook and duplicate protection
+
+Hour 3:00 to 4:00: Stage and advisor assignment Hour 4:00 to 5:30: Frontend Kanban boardHour 5:30 to 6:15: Socket.io live updateHour 6:15 to 7:00: Testing and commit
+
+lets begin with goal 1
+
+30)
