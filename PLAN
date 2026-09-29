@@ -1,0 +1,11 @@
+## Tech Stack (Sab Free Tier)
+
+- Frontend: React (Vite) + Tailwind → deploy on Vercel
+- Backend: Node/Express + Socket.io → deploy on Render (free web service)
+- DB: MongoDB Atlas free cluster
+- File storage: Cloudinary free tier
+- Email: Ethereal (fake SMTP, no real sending needed) ya Resend free tier
+- Drag-drop: `@dnd-kit/core` ya `react-beautiful-dnd`
+
+
+GOAL Day 2 (auth + multi-tenancy middleware)
