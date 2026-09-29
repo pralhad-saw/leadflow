@@ -175,3 +175,4 @@ Hour 3:00 to 4:00: Stage and advisor assignment Hour 4:00 to 5:30: Frontend Kanb
 lets begin with goal 1
 
 30)
+
