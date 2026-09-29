@@ -87,3 +87,19 @@ Tenant isolation
 Client apne clientId ko request body se change nahi kar sakta
 Client portal me upload UI
 Advisor/admin ke liye View documents button
+
+day 6
+document:checking
+document:approved
+document:rejected
+Client upload karta hai
+        ↓
+Backend document:checking emit karta hai
+        ↓
+Client UI status Checking show karti hai
+        ↓
+Background result complete hota hai
+        ↓
+Backend approved/rejected event emit karta hai
+        ↓
+Client aur advisor dono ka UI update hota hai
