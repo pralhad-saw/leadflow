@@ -18,4 +18,31 @@ MERN is fixed, now for document storage by various clients, real time update and
 
  5)Give steps and boilerplate codes to create the backend for a MERN project using Node.js and Express. Include the required npm packages, env, Express server, atlas connection code using Mongoose and a basic checking steps.
 
+ 6).env file mein jwt setup ab, Also explain what should be added to .gitignore so credentials are not committed to GitHub
+
+ 7)created Express server with atlas using Mongoose. now verify that both Express server and MongoDB connection are working
+
+ 8)Express is working but mongodb connection giving error even uri is right: 
  
+[nodemon] 3.1.14
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node server.js`
+◇ injected env (3) from .env
+Server running on port 5000
+MongoParseError: Invalid connection string
+    at new ConnectionString (D:\Coding\UNsquare\backend\node_modules\mongodb-connection-string-url\lib\index.js:117:23)
+    at parseOptions (D:\Coding\UNsquare\backend\node_modules\mongodb\lib\connection_string.js:202:17)
+    at new MongoClient (D:\Coding\UNsquare\backend\node_modules\mongodb\lib\mongo_client.js:67:61)
+    at NativeConnection.createClient (D:\Coding\UNsquare\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:338:14)
+    at NativeConnection.openUri (D:\Coding\UNsquare\backend\node_modules\mongoose\lib\connection.js:1081:34)
+    at Mongoose.connect (D:\Coding\UNsquare\backend\node_modules\mongoose\lib\mongoose.js:475:15)
+    at Object.<anonymous> (D:\Coding\UNsquare\backend\server.js:12:10)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+
+9) Done. now give steps creating a React frontend using Vite inside the project structure with all required dependencies installation for API communication, routing and future Socket.io integration
+
+10)
