@@ -148,3 +148,15 @@ also for testing give:
 6. A checklist to verify tenant isolation
 7. A simple explanation that I can use in an interview
 
+
+26)so now main features or pipeline will be made. first give data about all 4 users what we had done till now and remaining features too.
+
+27)so now we will move to day 3 goal 
+**Din 3 — Lead Webhook + Kanban Board (UI only)**
+- Ek POST `/api/webhook/lead` endpoint banao jo external source se lead accept kare (Postman se test karo, ya Google Form → Sheet → Apps Script se webhook call bhi kar sakte ho)
+- React mein simple Kanban UI (columns: New, Contacted, Won, Lost)
+- `@dnd-kit/core` ya `react-beautiful-dnd` se drag-drop (isko chhota tutorial dekh ke laga sakte ho, 1-2 ghante ka kaam hai)
+
+give in detail all we need to do upon this day 3 summary and what will be done and what we will not do intentionally to make it faster but mvp ready and which roles will be involved and for them what will be created,
+thrn categories according to fronend and backend and at last give workflow process of both and day 3 as a whole and at last what all we need to be checked
+
