@@ -59,3 +59,12 @@ Axios token interceptor
 Protected dashboard route
 React Router setup
 Backend/frontend local run working
+
+day 4
+Socket.io setup                    COMPLETE
+Live lead board updates             COMPLETE
+Lead to client conversion           COMPLETE
+Client login after conversion       COMPLETE
+Client-specific application API     COMPLETE
+Client application UI               COMPLETE
+Document upload                     DAY 5
