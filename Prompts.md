@@ -294,3 +294,42 @@ createdAt
 updatedAt
 
 also required controller as wll route file
+
+38)
+To Arena.ai
+document upload worked
+Ab iske upar fake background checking add karni hai
+flow-->
+Pending yellow color me
+Checking blue color me
+Approved green color me or Rejected red color me
+use 3 to 15 sec random delay
+70% cases final status uproved else reject give img not clr or other issue
+Document image is unclear
+in separate service folder for tracking in future
+
+39)
+
+use socket to make document flow live
+
+40)
+save rejected doc as maybe helpful in future log
+
+41)complete testing of application
+
+42)make readme i have uploaded my readme of my locatex project for refrence of structure
+43)summary of application in md
+44) THIS ALL DONE-->Thanks
+Backend MongoDB ke saath connect ho
+Frontend backend API se connect ho
+All four roles login kar sake
+Berlin user Munich data na dekh sake
+Webhook lead create kare
+Duplicate webhook duplicate lead na banaye
+Kanban stage update work kare
+Socket live update work kare
+Lead client me convert ho
+Client document upload kare
+Cloudinary file store kare
+Document status live update ho
+README aur PROMPTS.md repo me present ho
