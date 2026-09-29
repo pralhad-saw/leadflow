@@ -34,3 +34,28 @@ Quick login buttons
 Protected routes
 Axios JWT interceptor
 401 hone par automatic logout
+Day 2 completed
+JWT login
+Password bcrypt hashing
+/api/auth/me
+Protected routes
+Four roles:
+platform_admin
+brokerage_admin
+advisor
+client
+Brokerage-based tenant isolation
+User listing/create/status APIs
+Account disable support
+Token revocation using tokenVersion
+CORS allow-list
+Helmet security
+Login/API rate limiting
+Centralized error handling
+Berlin and Munich demo data
+Frontend login page
+Session restore
+Axios token interceptor
+Protected dashboard route
+React Router setup
+Backend/frontend local run working
