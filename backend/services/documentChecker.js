@@ -9,6 +9,7 @@ const REASONS = [
 function emit(io, document, event) {
   if (!io || !document?.brokerageId) return;
   io.to(`brokerage:${document.brokerageId}`).emit(event, { document });
+  io.to('platform_admins').emit(event, { document });
 }
 
 /**
