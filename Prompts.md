@@ -277,4 +277,20 @@ current stage
 assigned advisor
 basic application status
 
-37) done ab 
+37) done ab sab .
+create a document model with brokerageId
+clientId
+leadId
+uploadedBy
+originalName
+cloudinaryPublicId
+secureUrl
+resourceType
+mimeType
+size
+status
+failureReason
+createdAt
+updatedAt
+
+also required controller as wll route file
