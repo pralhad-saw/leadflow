@@ -68,3 +68,22 @@ Client login after conversion       COMPLETE
 Client-specific application API     COMPLETE
 Client application UI               COMPLETE
 Document upload                     DAY 5
+
+Day 5 me complete hua
+Document Mongoose model
+Cloudinary configuration
+Multer memory upload
+PDF/JPG/PNG validation
+Maximum 5 MB file limit
+Client document upload
+Client apne documents list kar sakta hai
+Advisor/admin client documents dekh sakte hain
+Document status:
+Pending
+Checking
+Approved
+Rejected
+Tenant isolation
+Client apne clientId ko request body se change nahi kar sakta
+Client portal me upload UI
+Advisor/admin ke liye View documents button

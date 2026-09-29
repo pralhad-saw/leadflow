@@ -20,6 +20,9 @@ const errorHandler = (err, req, res, next) => {
     status = 400;
     message = Object.values(err.errors).map((e) => e.message).join(', ');
   }
+  if (err.name === 'MulterError' || message.includes('Only PDF, JPG and PNG')) {
+    status = 400;
+  }
   // optimisticConcurrency on Lead -> two people edited the same doc
   if (err.name === 'VersionError') {
     status = 409;
