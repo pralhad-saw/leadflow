@@ -175,4 +175,106 @@ Hour 3:00 to 4:00: Stage and advisor assignment Hour 4:00 to 5:30: Frontend Kanb
 lets begin with goal 1
 
 30)
+Ab mujhe lead ke liye proper backend APIs bana ke do
 
+GET all leads
+GET single lead
+POST new lead
+PATCH lead details
+PATCH lead stage
+PATCH assign advisor
+DELETE lead
+
+Important hai ki har lead query brokerageId ke according scoped ho. Request body se aane wale brokerageId ko trust mat karna. Logged in user ke token se tenant identify karo
+
+brokerage_admin apne brokerage ke saare leads dekh sake aur advisor bhi apne brokerage ke leads dekh sake. Client ko lead board ka access nahi milna chahiye
+
+Advisor ko sirf same brokerage ka active advisor assign kiya ja sake. Kisi Berlin lead ko Munich advisor ke saath assign nahi karna hai
+
+Code ke baad PowerShell se API test karne ke commands bhi dena
+
+
+31)
+
+Ab external tools se leads receive karne ke liye webhook bana do,jwt abhi use mat karna
+
+Payload me name email phone source notes aur optional stage aa sakta hai
+
+Agar brokerage inactive ho ya secret wrong ho to request reject karo
+
+
+32)you did a mistake duplicate leads nhi hona chahiye retry hone par
+Agar external payload me dedupeKey aaye to same brokerage ke andar usko idempotency key ki tarah use karo
+Agar dedupeKey nahi aaye to email phone name aur source se ek stable hash bana sakte ho
+Same dedupeKey dobara aaye to new lead create karne ke bajaye existing lead return karo
+
+Agar same brokerage me same email ya phone ka lead already hai lekin payload ka dedupeKey alag hai to new lead create kar sakte ho but isDuplicate true aur duplicateOf me original lead ki id save karo
+
+Different brokerages me same email ko duplicate mat samajhna
+
+MongoDB unique index me null values ka issue bhi dhyan me rakhna.
+
+33)
+
+Dashboard placeholder ko actual Kanban lead board me replace karna hai
+
+Columns ye honge
+
+New
+Contacted
+Qualified
+Proposal
+Won
+Lost
+
+Lead card me name email phone source assigned advisor aur duplicate indicator dikhao
+Brokerage admin ko add lead stage update aur advisor assignment ka option do
+Advisor ko lead create aur stage update ka option do but advisor assignment ka option nahi dena
+
+Client ko Kanban board nahi dikhana hai
+
+Search add karo.
+
+
+To Arena.ai
+
+34)
+
+lead board ka basic version ready hai. Socket.io ko integrate karna hai
+Backend me HTTP server ke saath Socket.io attach karo
+Socket connection ke time JWT verify karo aur user ka brokerageId identify karo
+Ek brokerage ke events doosre brokerage ke users ko nahi milne chahiye
+Lead create hone par lead:created event bhejo
+Lead details update hone par lead:updated event bhejo
+Stage change par lead:stageChanged event bhejo
+Advisor assign hone par lead:assigned event bhejo
+Lead delete hone par lead:deleted event bhejo
+Frontend me socket.io-client use karke events listen karo aur board ko bina page refresh ke update karo
+Agar socket token invalid ho ya user disabled ho to connection reject karo
+
+35)
+
+test done.all featre till now are working
+
+
+35)
+
+Ab lead ko client me convert karne ka feature add karna hai for both Brokerage admin aur advisor but not for client
+
+Agar lead already converted hai to dobara convert na ho
+
+Agar same email ka client already same brokerage me hai to existing client ko link kar sakte ho. Lekin agar email kisi different role ya different brokerage ka hai to error do
+
+36)
+
+Client login ke baad usko sirf apni application dikhni chahiye
+
+GET /api/client/application banao
+Frontend me simple client portal banao jisme
+
+application name
+current stage
+assigned advisor
+basic application status
+
+37) done ab 
