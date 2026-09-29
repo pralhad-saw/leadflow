@@ -22,7 +22,22 @@ MERN is fixed, now for document storage by various clients, real time update and
 
  7)created Express server with atlas using Mongoose. now verify that both Express server and MongoDB connection are working
 
- 8)Express is working but mongodb connection giving error even uri is right: 
+
+8) Done. now give steps creating a React frontend using Vite inside the project structure with all required dependencies installation for API communication, routing and future Socket.io integration
+
+9)
+Now verify frontend 
+
+10) Design the initial Mongoose schemas for a multi-tenant lead management platform. Create models for:
+
+Brokerage
+User
+Lead
+
+ User model should support the roles platform_admin, brokerage_admin, advisor and client. Users and leads should be associated with a brokerage using brokerageId
+
+
+ 10)Express is working but mongodb connection giving error even uri is right: 
  
 [nodemon] 3.1.14
 [nodemon] to restart at any time, enter `rs`
@@ -43,6 +58,5 @@ MongoParseError: Invalid connection string
     at Object..js (node:internal/modules/cjs/loader:2060:10)
     at Module.load (node:internal/modules/cjs/loader:1651:32)
 
-9) Done. now give steps creating a React frontend using Vite inside the project structure with all required dependencies installation for API communication, routing and future Socket.io integration
 
-10)
+11)
