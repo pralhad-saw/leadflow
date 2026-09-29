@@ -20,6 +20,8 @@ MERN is fixed, now for document storage by various clients, real time update and
 
  6).env file mein jwt setup ab, Also explain what should be added to .gitignore so credentials are not committed to GitHub
 
+
+To chatgpt:
  7)created Express server with atlas using Mongoose. now verify that both Express server and MongoDB connection are working
 
 
@@ -27,6 +29,9 @@ MERN is fixed, now for document storage by various clients, real time update and
 
 9)
 Now verify frontend 
+
+
+To Arena.ai
 
 10) Design the initial Mongoose schemas for a multi-tenant lead management platform. Create models for:
 
@@ -37,7 +42,7 @@ Lead
  User model should support the roles platform_admin, brokerage_admin, advisor and client. Users and leads should be associated with a brokerage using brokerageId
 
 
- 10)Express is working but mongodb connection giving error even uri is right: 
+ 11)Express is working but mongodb connection giving error even uri is right: 
  
 [nodemon] 3.1.14
 [nodemon] to restart at any time, enter `rs`
@@ -59,4 +64,5 @@ MongoParseError: Invalid connection string
     at Module.load (node:internal/modules/cjs/loader:1651:32)
 
 
-11)
+12)done
+
