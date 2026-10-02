@@ -177,27 +177,24 @@ export default function Dashboard() {
           {canManage && <button className="btn primary" onClick={() => setShowForm(!showForm)}>+ Add lead</button>}
         </div>
 
-        {/* Pipeline stats */}
-<div style={{
-  display: 'flex', gap: 16, margin: '0 0 16px', flexWrap: 'wrap'
-}}>
-  {STAGES.map((stage) => (
-    <div key={stage} style={{
-      background: '#fff', border: '1px solid #e4e8ef',
-      borderRadius: 10, padding: '10px 16px', minWidth: 100,
-      textAlign: 'center'
-    }}>
-      <div style={{ fontSize: 24, fontWeight: 700, color: '#2f6bff' }}>
-        {columns[stage]?.length || 0}
+       {/* Pipeline stats */}
+{user.role !== 'client' && (
+  <div style={{ display: 'flex', gap: 16, margin: '0 0 16px', flexWrap: 'wrap' }}>
+    {STAGES.map((stage) => (
+      <div key={stage} style={{
+        background: '#fff', border: '1px solid #e4e8ef',
+        borderRadius: 10, padding: '10px 16px', minWidth: 100, textAlign: 'center'
+      }}>
+        <div style={{ fontSize: 24, fontWeight: 700, color: '#2f6bff' }}>
+          {columns[stage]?.length || 0}
+        </div>
+        <div style={{ fontSize: 11, color: '#6b7687', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+          {stage}
+        </div>
       </div>
-      <div style={{ fontSize: 11, color: '#6b7687',
-        textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-        {stage}
-      </div>
-    </div>
-  ))}
-</div>
-
+    ))}
+  </div>
+)}
         {error && <div className="alert">{error}<button onClick={() => setError('')}>×</button></div>}
         {notice && <div className="success">{notice}</div>}
         {clientDocuments.length > 0 && (
