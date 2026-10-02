@@ -139,3 +139,21 @@ UNsquare/
 ├── PROMPTS.md
 ├── SUBMISSION-SUMMARY.md
 └── vercel.json
+
+clear reuirement checklist 
+
+#	Requirement	Status
+1	Multi-tenancy (brokerageId scoping)	✅
+2	Lead webhook from external tool	✅
+3	Pipeline board + live Socket.io updates	✅
+4	Duplicate lead detection	✅
+5	Lead → Client conversion + login + upload	✅
+6	Fake async document check + live status	✅
+7	Dashboard with pipeline numbers	❌ MISSING
+8	Email templates CRUD	❌ MISSING
+9	Email triggers on stage change	❌ MISSING
+10	Task triggers on column entry	❌ MISSING
+
+https://leadflow-jot1.onrender.com/
+https://leadflow-seven-alpha.vercel.app/
+https://leadflow-pralhad4.vercel.app
