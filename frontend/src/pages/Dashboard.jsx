@@ -218,7 +218,7 @@ export default function Dashboard() {
               <strong>Platform overview</strong>
               <p className="muted small">Read-only view across brokerages. Select a brokerage to inspect its pipeline.</p>
             </div>
-            <select value={selectedBrokerageId} onChange={(e) => setSelectedBrokerageId(e.target.value)}>
+            <select className="brokerage-select" value={selectedBrokerageId} onChange={(e) => setSelectedBrokerageId(e.target.value)}>
               <option value="">All brokerages</option>
               {brokerages.map((brokerage) => (
                 <option key={brokerage._id} value={brokerage._id}>{brokerage.name} ({brokerage.slug})</option>
@@ -289,14 +289,14 @@ export default function Dashboard() {
                         {advisors.map((advisor) => <option key={advisor.id} value={advisor.id}>{advisor.name}</option>)}
                       </select>
                     )}
-                    {lead.assignedTo && <span className="muted small">Assigned: {lead.assignedTo.name}</span>}
+                    {lead.assignedTo && <span className="muted small ">Assigned: {lead.assignedTo.name}</span>}
                     {canManage && !lead.convertedClientId && lead.email && (
-                      <button className="btn small-btn" onClick={() => convertLead(lead._id)}>Convert to client</button>
+                      <button className="btn small-btn convert-client-btn" onClick={() => convertLead(lead._id)}>Convert to client</button>
                     )}
                     {lead.convertedClientId && (
                       <>
                         <span className="converted">Client created</span>
-                        <button className="btn small-btn" onClick={() => viewClientDocuments(lead.convertedClientId)}>View documents</button>
+                        <button className="btn small-btn view-documents-btn" onClick={() => viewClientDocuments(lead.convertedClientId)}>View documents</button>
                       </>
                     )}
                   </article>
