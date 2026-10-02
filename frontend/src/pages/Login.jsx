@@ -68,7 +68,7 @@ export default function Login() {
         </form>
 
         <div className="divider" />
-        <p className="muted small">Demo accounts (password: {DEMO_PASSWORD})</p>
+        <p className="muted small">Test Demo accounts (password: {DEMO_PASSWORD})</p>
         <div className="chips">
           {DEMO.map((d) => (
             <button
