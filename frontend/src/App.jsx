@@ -18,7 +18,7 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        {/* Day 3 will add: /board (advisor + admin), /client (client portal) */}
+        
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AuthProvider>
