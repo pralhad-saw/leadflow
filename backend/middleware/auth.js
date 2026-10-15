@@ -9,14 +9,6 @@ function extractToken(req) {
   return null;
 }
 
-/**
- * protect -- authenticate the request and pin it to exactly one tenant.
- *
- * Deliberate choice: we hit Mongo on every request instead of trusting the JWT
- * payload. Cost is one indexed _id lookup (~1ms); benefit is that deactivating
- * a user, disabling a brokerage, or bumping tokenVersion takes effect
- * immediately instead of after the token expires. Cache in Redis if it hurts.
- */
 const protect = asyncHandler(async (req, res, next) => {
   const token = extractToken(req);
   if (!token) throw new AppError('Not authenticated', 401);
