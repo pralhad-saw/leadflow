@@ -7,8 +7,7 @@ const asyncHandler = require('../utils/asyncHandler');
 function makeDedupeKey(payload) {
   if (payload.dedupeKey) return String(payload.dedupeKey).trim();
 
-  // If the external tool does not provide an idempotency key, create a stable
-  // fallback from the identifying fields. This prevents the same form retry
+  
   // from creating multiple identical leads.
   const identity = [payload.email, payload.phone, payload.name, payload.source]
     .map((value) => String(value || '').trim().toLowerCase())
