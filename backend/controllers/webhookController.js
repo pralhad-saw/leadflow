@@ -8,7 +8,6 @@ function makeDedupeKey(payload) {
   if (payload.dedupeKey) return String(payload.dedupeKey).trim();
 
   
-  // from creating multiple identical leads.
   const identity = [payload.email, payload.phone, payload.name, payload.source]
     .map((value) => String(value || '').trim().toLowerCase())
     .join('|');
