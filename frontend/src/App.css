@@ -131,24 +131,7 @@ p  { margin: 0; }
 }
 
 /* ---------- Buttons ---------- */
-/* .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  font: inherit;
-  font-weight: 600;
-  font-size: 13px;
-  padding: 9px 14px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border-strong);
-  background: var(--surface);
-  color: var(--text);
-  cursor: pointer;
-  transition: background var(--t-fast), border-color var(--t-fast),
-              box-shadow var(--t-fast), transform var(--t-fast), color var(--t-fast);
-  white-space: nowrap;
-} */
+
  .btn {
   display: inline-flex;
   align-items: center;
