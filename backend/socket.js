@@ -47,6 +47,3 @@ function attachSocket(server, allowedOrigins) {
 }
 
 module.exports = attachSocket;
-// const { Server } = require('socket.io');
-// const User = require('./models/User');
-// 
