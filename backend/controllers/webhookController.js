@@ -21,12 +21,7 @@ function safeSecretEqual(received, expected) {
   return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 
-/**
- * POST /api/webhooks/leads/:brokerageSlug
- *
- * This endpoint is intentionally not JWT-protected because the caller is an
- * external form/tool. It is protected by the brokerage-specific secret.
- */
+
 const receiveLeadWebhook = asyncHandler(async (req, res) => {
   const brokerage = await Brokerage.findOne({
     slug: String(req.params.brokerageSlug).toLowerCase(),
